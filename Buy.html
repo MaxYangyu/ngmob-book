@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>章节购买</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript">
+        var myScroll;
+        var myScroll1;
+
+        function loaded() {
+            myScroll = new IScroll('#wrapper', {
+                mouseWheel: true,
+                cacheSize: 1000,
+                click:true,
+            })
+        }
+
+        function loaded1() {
+            myScroll1 = new IScroll('#wrapper1', {
+                mouseWheel: true,
+                cacheSize: 1000,
+                click:true,
+            })
+        }
+
+    </script>
+</head>
+<body onload="loaded();loaded1()" style="background-color: #fff;">
+<div class="Buy">
+    <div class="money">
+        <p>您的余额:<i>0</i>逗米</p>
+        <p>应付金额:<span>18888逗米</span></p>
+    </div>
+    <div class="pay">
+        <span class="active ten">后十章</span><span class="fifty">后五十章</span>
+    </div>
+    <div class="pay two">
+        <span class="hundred">后一百章</span><span class="custom">自定义</span>
+    </div>
+    <div class="sele">
+        <div class="left">
+            <div class="val">第2883章</div>
+            <img src="img/下拉箭头@2x.png"/>
+            <div id="wrapper" class="wrapper none">
+                <div id="scroller">
+                    <ul>
+                        <li><a href="javascript:void (0)">第2883555章</a></li>
+                        <li><a href="javascript:void (0)">第2883章</a></li>
+                        <li><a href="javascript:void (0)">第2883章</a></li>
+                        <li><a href="javascript:void (0)">第2883章</a></li>
+                        <li><a href="javascript:void (0)">第2883章</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <span></span>
+        <div class="right">
+            <div class="val">第2883章</div>
+            <img src="img/下拉箭头@2x.png"/>
+            <div id="wrapper1" class="wrapper none">
+                <div id="scroller">
+                    <ul>
+                        <li><a href="javascript:void (0)">第2883555章</a></li>
+                        <li><a href="javascript:void (0)">第2883章</a></li>
+                        <li><a href="javascript:void (0)">第2883章</a></li>
+                        <li><a href="javascript:void (0)">第2883章</a></li>
+                        <li><a href="javascript:void (0)">第2883章</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="btn">付费购买</p>
+    <div id="overlay"></div>
+    <div class="buy-callback">
+        <img src="img/成功购买@2x.png" height="98" width="98"/>
+        <p class="callback">成功购买</p>
+        <p class="name">天龙八部</p>
+        <p class="book-info">第344章-844章付费章节</p>
+        <p class="back">返回继续阅读</p>
+    </div>
+</div>
+
+
+</body>
+<script src="js/rem.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/an.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/mask.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/buy.js"></script>
+</html>

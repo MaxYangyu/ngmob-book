@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玄幻</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="Sort">
+    <div class="title">
+        <span class="active">连载中</span>
+        <span>已完结</span>
+    </div>
+    <div class="reading-last list-one">
+        <a href="BookInfo.html">
+            <div class="media">
+                <div class="media-left">
+                    <img src="img/图层-26@2x.png"/>
+                </div>
+                <div class="media-body">
+                    <p class="book">废柴小姐姐</p><i class='green'>更新</i>
+                    <p class="name">作者：<span>上官雨儿</span></p>
+                    <p class="gray">最新章节：<span>第3444章 大西瓜碎了</span></p>
+                    <p class="number">383万阅读</p>
+                </div>
+            </div>
+        </a>
+        <a href="BookInfo.html">
+            <div class="media">
+                <div class="media-left">
+                    <img src="img/图层-26@2x.png"/>
+                </div>
+                <div class="media-body">
+                    <p class="book">废柴小姐姐</p><i class='orange'>推荐</i>
+                    <p class="name">作者：<span>上官雨儿</span></p>
+                    <p class="gray">最新章节：<span>第3444章 大西瓜碎了</span></p>
+                    <p class="number">383万阅读</p>
+                </div>
+            </div>
+        </a>
+        <a href="BookInfo.html">
+            <div class="media">
+                <div class="media-left">
+                    <img src="img/图层-26@2x.png"/>
+                </div>
+                <div class="media-body">
+                    <p class="book">废柴小姐姐</p><i class='purple'>推荐</i>
+                    <p class="name">作者：<span>上官雨儿</span></p>
+                    <p class="gray">最新章节：<span>第3444章 大西瓜碎了</span></p>
+                    <p class="number">383万阅读</p>
+                </div>
+            </div>
+
+        </a>
+    </div>
+    <div class="reading-last list-two none">
+        <a href="BookInfo.html">
+            <div class="media">
+                <div class="media-left">
+                    <img src="img/图层-26@2x.png"/>
+                </div>
+                <div class="media-body">
+                    <p class="book">废柴小姐姐2</p><i class='green'>更新</i>
+                    <p class="name">作者：<span>上官雨儿</span></p>
+                    <p class="gray">最新章节：<span>第3444章 大西瓜碎了</span></p>
+                    <p class="number">383万阅读</p>
+                </div>
+            </div>
+        </a>
+        <a href="BookInfo.html">
+            <div class="media">
+                <div class="media-left">
+                    <img src="img/图层-26@2x.png"/>
+                </div>
+                <div class="media-body">
+                    <p class="book">废柴小姐姐</p><i class='orange'>推荐</i>
+                    <p class="name">作者：<span>上官雨儿</span></p>
+                    <p class="gray">最新章节：<span>第3444章 大西瓜碎了</span></p>
+                    <p class="number">383万阅读</p>
+                </div>
+            </div>
+        </a>
+        <a href="BookInfo.html">
+            <div class="media">
+                <div class="media-left">
+                    <img src="img/图层-26@2x.png"/>
+                </div>
+                <div class="media-body">
+                    <p class="book">废柴小姐姐</p><i class='purple'>推荐</i>
+                    <p class="name">作者：<span>上官雨儿</span></p>
+                    <p class="gray">最新章节：<span>第3444章 大西瓜碎了</span></p>
+                    <p class="number">383万阅读</p>
+                </div>
+            </div>
+
+        </a>
+    </div>
+    <p class="btn">
+        查看更多
+    </p>
+</div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+        $('.title>span:nth-child(2)').on('click', function () {
+            $('.title>span:nth-child(2)').addClass('active');
+            $('.title>span:nth-child(1)').removeClass('active');
+            $('.list-two').removeClass('none');
+            $('.list-one').addClass('none')
+        });
+        $('.title>span:nth-child(1)').on('click', function () {
+            $('.title>span:nth-child(1)').addClass('active');
+            $('.title>span:nth-child(2)').removeClass('active');
+            $('.list-one').removeClass('none');
+            $('.list-two').addClass('none')
+        })
+    })
+</script>
+</html>

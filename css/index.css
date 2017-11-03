@@ -1,0 +1,1405 @@
+body {
+  background-color: #f1f1f1;
+}
+@font-face {
+  font-family: number-font;
+  src: url('../font/HelveticaNeue-BoldCond.otf') format('OpenType');
+  font-weight: normal;
+  font-style: normal;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.none {
+  display: none;
+}
+/*首页*/
+.am-slides li a img {
+  width: 100%;
+  height: 3rem;
+}
+.select-info {
+  width: 7.50rem;
+  height: 1.72rem;
+  background: #ffffff;
+}
+.select-info .reading {
+  width: 3.22rem;
+  height: 1.32rem;
+  position: relative;
+  display: inline-block;
+  margin-left: 0.34rem;
+}
+.select-info .reading .bg {
+  width: 3.22rem;
+  height: 1.32rem;
+  position: absolute;
+  top: -0.3rem;
+}
+.select-info .reading .clock {
+  position: absolute;
+  width: 0.65rem;
+  height: 0.65rem;
+  top: 0%;
+  left: 0.34rem;
+}
+.select-info .reading span {
+  position: absolute;
+  right: .50rem;
+  font-size: .32rem;
+  font-family: PingFangSC-Medium;
+  color: #ffffff;
+  top:5%;
+}
+.select-info .more {
+  position: relative;
+  display: inline-block;
+  width: 3.22rem;
+  height: 1.32rem;
+}
+.select-info .more .bg {
+  width: 3.22rem;
+  height: 1.32rem;
+  position: absolute;
+  top: -0.3rem;
+}
+.select-info .more .book {
+  height: .65rem;
+  width: .65rem;
+  position: absolute;
+  top: 0%;
+  left: 0.34rem;
+}
+.select-info .more span {
+  position: absolute;
+  top: 0;
+  right: .50rem;
+  font-size: .32rem;
+  font-family: PingFangSC-Medium;
+  color: #ffffff;
+  top:5%;
+}
+.recommend {
+  margin-top: 0.2rem;
+  background: #ffffff;
+  padding-top: 0.34rem;
+  font-size: .34rem;
+  font-family: PingFangSC-Medium;
+  color: #1f1f25;
+}
+.recommend p {
+  margin: 0;
+  padding: 0;
+}
+.recommend .btn {
+  border-top: 0.01rem solid #f1f1f1;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: .28rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+  margin-top: 0.34rem;
+}
+.recommend .title i {
+  display: inline-block;
+  width: .08rem;
+  height: .34rem;
+  background: #f60549;
+  vertical-align: sub;
+}
+.recommend .title span {
+  font-weight: 700;
+  font-size: .34rem;
+  font-family: PingFangSC-Medium;
+  color: #1f1f25;
+  padding-left: 0.26rem;
+}
+.recommend .box {
+  margin-top: 0.36rem;
+}
+.recommend .box a {
+  margin-left: 0.23rem;
+  display: inline-block;
+}
+.recommend .box a img {
+  width: 1.52rem;
+  height: 2.04rem;
+}
+.recommend .box a p {
+  text-align: left;
+  width: 1.49rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #333333;
+}
+.list-box {
+  margin-top: 0.2rem;
+  background: #ffffff;
+  padding-top: 0.34rem;
+  font-size: .34rem;
+  font-family: PingFangSC-Medium;
+  color: #1f1f25;
+  margin-bottom: 0.2rem;
+}
+.list-box .btn {
+  border-top: 0.01rem solid #f1f1f1;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: .28rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+  margin-top: 0.34rem;
+}
+.list-box .title i {
+  display: inline-block;
+  width: .08rem;
+  height: .34rem;
+  background: #f60549;
+  vertical-align: sub;
+}
+.list-box .title span {
+  font-weight: 700;
+  font-size: .34rem;
+  font-family: PingFangSC-Medium;
+  color: #1f1f25;
+  padding-left: 0.26rem;
+}
+.list-box .top-list .media {
+  margin-top: 0.34rem;
+}
+.list-box .top-list .media .media-left {
+  display: inline-block;
+  margin-left: 0.34rem;
+}
+.list-box .top-list .media .media-left img {
+  width: 1.52rem;
+  height: 2.04rem;
+  vertical-align: initial;
+}
+.list-box .top-list .media .media-body {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.34rem;
+  vertical-align: top;
+  width: 4rem;
+  height: 2.04rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-box .top-list .media .media-body .book {
+  font-size: .30rem;
+  width: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: PingFangSC-Medium;
+  color: #333333;
+}
+.list-box .top-list .media .media-body .name {
+  margin-top: 0.18rem;
+  font-size: .24rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.list-box .top-list .media .media-body .name span {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-box .top-list .media .media-body .gray {
+  margin-top: 0.18rem;
+  font-size: .24rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.list-box .top-list .media .media-body .gray span {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 2.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-box .top-list .media .media-body .number {
+  width: 1.5rem;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  text-align: center;
+  border: 0.02rem solid #f60549;
+  border-radius: 0.05rem;
+  font-size: .20rem;
+  font-family: PingFangSC-Regular;
+  color: #f60549;
+  position: absolute;
+  bottom: 0;
+}
+.list-box .top-list .media .media-right {
+  display: inline-block;
+  float: right;
+}
+.list-box .top-list .media .media-right img {
+  width: 1.18rem;
+  height: 1.04rem;
+}
+.list-box .top-list .media .media-right span {
+  display: inline-block;
+  font-size: .70rem;
+  margin-right: 0.27rem;
+  font-family: number-font;
+  font-style: italic;
+  color: #788296;
+}
+/*正在阅读*/
+.reading-list {
+  font-size: .30rem;
+  font-family: PingFangSC-Medium;
+  color: #333333;
+}
+.reading-list .header {
+  background-color: #fff;
+  padding-top: 0.34rem;
+}
+.reading-list .body {
+  background-color: #fff;
+  margin-top: 0.3rem;
+}
+.reading-list .body .btn {
+  background-color: #fff;
+  border-top: 0.01rem solid #f1f1f1;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: .28rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.reading-list .title i {
+  display: inline-block;
+  width: .08rem;
+  height: .34rem;
+  background: #f60549;
+  vertical-align: sub;
+}
+.reading-list .title span {
+  font-weight: 700;
+  font-size: .34rem;
+  font-family: PingFangSC-Medium;
+  color: #1f1f25;
+  padding-left: 0.26rem;
+}
+.reading-list .reading-last .media {
+  margin-top: 0.34rem;
+  padding-bottom: 0.34rem;
+}
+.reading-list .reading-last .media .media-left {
+  display: inline-block;
+  margin-left: 0.34rem;
+}
+.reading-list .reading-last .media .media-left img {
+  width: 1.52rem;
+  height: 2.04rem;
+  vertical-align: initial;
+}
+.reading-list .reading-last .media .media-body {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.34rem;
+  vertical-align: top;
+  width: 4rem;
+  height: 2.04rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.reading-list .reading-last .media .media-body .book {
+  display: inline-block;
+  font-size: .30rem;
+  width: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: PingFangSC-Medium;
+  color: #333333;
+}
+.reading-list .reading-last .media .media-body i {
+/*  display: inline-block;
+  width: 0.5rem;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  text-align: center;
+  border-radius: 0.04rem;
+  background: #4fd2a2;
+  font-size: .20rem;
+  font-family: PingFangSC-Regular;
+  color: #ffffff;
+  vertical-align: text-top;
+  margin-left: 0.1rem;*/
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  text-align: center;
+  border-radius: 0.04rem;
+  background: #4fd2a2;
+  font-size: .20rem;
+  font-family: PingFangSC-Regular;
+  color: #ffffff;
+  vertical-align: text-top;
+  margin-left: 0.1rem;
+  margin-top: 0.08rem;
+}
+.reading-list .reading-last .media .media-body .name {
+  margin-top: 0.18rem;
+  font-size: .24rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.reading-list .reading-last .media .media-body .name span {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.reading-list .reading-last .media .media-body .gray {
+  margin-top: 0.18rem;
+  font-size: .24rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.reading-list .reading-last .media .media-body .gray span {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 2.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.reading-list .reading-last .media .media-body .number {
+  width: 1.5rem;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  text-align: center;
+  border: 0.02rem solid #f60549;
+  border-radius: 0.05rem;
+  font-size: .20rem;
+  font-family: PingFangSC-Regular;
+  color: #f60549;
+  position: absolute;
+  bottom: 0;
+}
+/*更多分类*/
+.more {
+  padding-top: 0.34rem;
+  background-color: #fff;
+}
+.more .box a:nth-child(1) {
+  margin-left: 0.29rem;
+}
+.more .box a {
+  display: inline-block;
+  position: relative;
+}
+.more .box a img {
+  width: 1.52rem;
+  height: 2.04rem;
+}
+.more .box a span {
+  display: inline-block;
+  width: 1.52rem;
+  height: 2.04rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 2.04rem;
+  font-size: .36rem;
+  font-family: PingFangSC-Regular;
+  color: #ffffff;
+  top: 0;
+  left:0;
+  border-radius: 0.08rem;
+}
+.more .box a p {
+  text-align: left;
+  width: 1.49rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #333333;
+}
+/*玄幻*/
+.Sort {
+  font-size: .30rem;
+  font-family: PingFangSC-Medium;
+  color: #333333;
+  background-color: #fff;
+}
+.Sort .title {
+  line-height: 1rem;
+  padding-left: 0.34rem;
+}
+.Sort .title span {
+  display: inline-block;
+  width: 1.28rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: .28rem;
+  font-family: STXihei;
+  color: #788296;
+  text-align: center;
+}
+.Sort .title span:nth-child(1) {
+  text-align: center;
+  margin-right: 0.75rem;
+}
+.Sort .title .active {
+  color: #ffffff;
+  background: linear-gradient(to right, #8111ff, #f60549);
+  border-radius: 0.24rem;
+}
+.Sort .reading-last .media {
+  margin-top: 0.34rem;
+  padding-bottom: 0.34rem;
+}
+.Sort .reading-last .media .media-left {
+  display: inline-block;
+  margin-left: 0.34rem;
+}
+.Sort .reading-last .media .media-left img {
+  width: 1.52rem;
+  height: 2.04rem;
+  vertical-align: initial;
+}
+.Sort .reading-last .media .media-body {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.34rem;
+  vertical-align: top;
+  width: 4rem;
+  height: 2.04rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Sort .reading-last .media .media-body .book {
+  display: inline-block;
+  font-size: .30rem;
+  width: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: PingFangSC-Medium;
+  color: #333333;
+}
+.Sort .reading-last .media .media-body .green {
+  background: #4fd2a2;
+}
+.Sort .reading-last .media .media-body .orange {
+  background: #ff8752;
+}
+.Sort .reading-last .media .media-body .purple {
+  background: #8b52ff;
+}
+.Sort .reading-last .media .media-body i {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  text-align: center;
+  border-radius: 0.04rem;
+  font-size: .20rem;
+  font-family: PingFangSC-Regular;
+  color: #ffffff;
+  vertical-align: text-top;
+  margin-left: 0.1rem;
+  margin-top: 0.08rem;
+}
+.Sort .reading-last .media .media-body .name {
+  margin-top: 0.18rem;
+  font-size: .24rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.Sort .reading-last .media .media-body .name span {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Sort .reading-last .media .media-body .gray {
+  margin-top: 0.18rem;
+  font-size: .24rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.Sort .reading-last .media .media-body .gray span {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 2.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Sort .reading-last .media .media-body .number {
+  width: 1.5rem;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  text-align: center;
+  border: 0.02rem solid #f60549;
+  border-radius: 0.05rem;
+  font-size: .20rem;
+  font-family: PingFangSC-Regular;
+  color: #f60549;
+  position: absolute;
+  bottom: 0;
+}
+.Sort .btn {
+  background-color: #fff;
+  border-top: 0.01rem solid #f1f1f1;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: .28rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+/*详情*/
+.Book-info {
+  font-size: .30rem;
+  font-family: PingFangSC-Medium;
+  color: #333333;
+}
+.Book-info .reading-last {
+  background-color: #fff;
+  border: 0.02rem solid #F1F1F1;
+}
+.Book-info .media {
+  padding-top: 0.34rem;
+  padding-bottom: 0.34rem;
+}
+.Book-info .media .media-left {
+  display: inline-block;
+  margin-left: 0.34rem;
+}
+.Book-info .media .media-left img {
+  width: 1.52rem;
+  height: 2.04rem;
+  vertical-align: initial;
+}
+.Book-info .media .media-body {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.34rem;
+  vertical-align: top;
+  width: 4rem;
+  height: 2.04rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Book-info .media .media-body .book {
+  display: inline-block;
+  font-size: .30rem;
+  width: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: PingFangSC-Medium;
+  color: #333333;
+}
+.Book-info .media .media-body .green {
+  background: #4fd2a2;
+}
+.Book-info .media .media-body .orange {
+  background: #ff8752;
+}
+.Book-info .media .media-body .purple {
+  background: #8b52ff;
+}
+.Book-info .media .media-body i {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  text-align: center;
+  border-radius: 0.04rem;
+  font-size: .20rem;
+  font-family: PingFangSC-Regular;
+  color: #ffffff;
+  vertical-align: text-top;
+  margin-left: 0.1rem;
+  margin-top: 0.08rem;
+}
+.Book-info .media .media-body .name {
+  margin-top: 0.18rem;
+  font-size: .24rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.Book-info .media .media-body .name span {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Book-info .media .media-body .gray {
+  margin-top: 0.18rem;
+  font-size: .24rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.Book-info .media .media-body .gray span {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 2.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Book-info .media .media-body .number {
+  width: 1.5rem;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  text-align: center;
+  border: 0.02rem solid #f60549;
+  border-radius: 0.05rem;
+  font-size: .20rem;
+  font-family: PingFangSC-Regular;
+  color: #f60549;
+  position: absolute;
+  bottom: 0;
+}
+.Book-info .mix-info {
+  width: 6.75rem;
+  height: 1.57rem;
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  margin: 0 auto;
+  color: #1f1f25;
+  position: relative;
+}
+.Book-info .mix-info span {
+  line-height: 0.38rem;
+  display: inline-block;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  height: 1.45rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Book-info .mix-info .btn {
+  width: 0.17rem;
+  height: 0.08rem;
+  position: absolute;
+  bottom: .14rem;
+  right: -0.04rem;
+}
+.Book-info .reading {
+  margin-top: .38rem;
+}
+.Book-info .reading img {
+  margin-left: 0.34rem;
+  width: 0.35rem;
+  height: 0.3rem;
+}
+.Book-info .reading span {
+  display: inline-block;
+  margin-left: 0.2rem;
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+}
+.Book-info .reading i {
+  display: inline-block;
+  margin-left: 0.23rem;
+  font-size: .24rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+  width: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: text-bottom;
+}
+.Book-info .news {
+  margin-top: .38rem;
+  padding-bottom: 0.48rem;
+}
+.Book-info .news img {
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-left: 0.34rem;
+}
+.Book-info .news span {
+  display: inline-block;
+  margin-left: 0.22rem;
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+}
+.Book-info .news i {
+  display: inline-block;
+  margin-left: 0.23rem;
+  font-size: .24rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+  width: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: text-bottom;
+}
+.Book-info .book-list {
+  background-color: #fff;
+}
+.Book-info .book-list .list-title {
+  font-size: .30rem;
+  font-family: PingFangSC-Medium;
+  color: #333333;
+  font-weight: 700;
+  margin-left: 0.34rem;
+  padding-top: .34rem;
+}
+.Book-info .book-list ol {
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+  margin-top: 0.44rem;
+}
+.Book-info .book-list ol li {
+  margin: 0 .34rem;
+  display: list-item;
+  margin-bottom: 0.69rem;
+}
+.Book-info .book-list ol li span:nth-child(2) {
+  float: right;
+}
+.Book-info .book-list ol li span:nth-child(1) {
+  display: inline-block;
+  width: 3.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Book-info .book-list ol li .yellow {
+  color: #FF9000;
+}
+.Book-info .book-list ol li .green {
+  color: #3AC981;
+}
+.Book-info .book-list ol li .red {
+  color: #F60549;
+}
+.Book-info .book-footer {
+  background-color: #fff;
+  margin-top: 0.2rem;
+}
+.Book-info .book-footer .title {
+  padding-top: 0.34rem;
+}
+.Book-info .fd {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  background: #F60549;
+  font-size: .30rem;
+  font-family: PingFangSC-Medium;
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+.Book-info .select {
+  padding-bottom: 0.46rem;
+    position: relative;
+}
+.Book-info .select > div {
+  text-align: center;
+  width: 2.08rem;
+  height: .66rem;
+  line-height: .66rem;
+  background: #f1f1f1;
+  border-radius: 0.06rem;
+  display: inline-block;
+}
+.Book-info .select .last {
+  margin-left: 0.4rem;
+}
+.Book-info .select .last img {
+  width: .19rem;
+  height: .18rem;
+  vertical-align: baseline;
+}
+.Book-info .select .selected {
+  margin: 0 0.1rem;
+}
+.Book-info .select .selected img {
+  width: .17rem;
+  height: .08rem;
+}
+.Book-info .select .selected i {
+  color: #F60549;
+}
+.Book-info .select .next {
+  margin-right: 0.34rem;
+}
+.Book-info .select .next img {
+  vertical-align: baseline;
+  width: .19rem;
+  height: .18rem;
+}
+.Book-info .title i {
+  display: inline-block;
+  width: .08rem;
+  height: .34rem;
+  background: #f60549;
+  vertical-align: sub;
+}
+.Book-info .title span {
+  font-weight: 700;
+  font-size: .34rem;
+  font-family: PingFangSC-Medium;
+  color: #1f1f25;
+  padding-left: 0.26rem;
+}
+.Book-info .select .wrapper {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    width: 2.08rem;
+    height: 0.9rem;
+    left: 35%;
+    top: .7rem;
+    font-size: .26rem;
+    background: #f1f1f1;
+}
+.Book-info .select .wrapper ul {
+    margin: 0 .34rem;
+}
+.Book-info .select .wrapper ul li {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    border-bottom: 0.02rem solid #fff;
+}
+/*内容*/
+.Book {
+  background-color: #fff;
+  font-size: .30rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+}
+.Book h1 {
+  font-weight: 700;
+  padding-top: 0.34rem;
+  margin-left: 0.34rem;
+  font-size: .48rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+}
+.Book .info {
+  width: 6.65rem;
+  margin: 0 auto;
+}
+.Book .info p:nth-child(1) {
+  margin-top: 0.55rem;
+}
+.Book .info p {
+  text-indent: 2em;
+  font-size: .30rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+  margin-bottom: 0.4rem;
+}
+.Book .select {
+  padding-bottom: 0.46rem;
+}
+.Book .select div {
+  text-align: center;
+  width: 2.08rem;
+  height: .66rem;
+  line-height: .66rem;
+  background: #f1f1f1;
+  border-radius: 0.06rem;
+  display: inline-block;
+}
+.Book .select .last {
+  margin-left: 0.4rem;
+}
+.Book .select .last img {
+  width: .19rem;
+  height: .18rem;
+  vertical-align: baseline;
+}
+.Book .select .selected {
+  margin: 0 0.1rem;
+}
+.Book .select .selected img {
+  width: .22rem;
+  height: .19rem;
+  vertical-align: baseline;
+}
+.Book .select .next {
+  margin-right: 0.34rem;
+}
+.Book .select .next img {
+  width: .19rem;
+  height: .18rem;
+  vertical-align: baseline;
+}
+.Book #overlay {
+  background: #000;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: none;
+}
+.Book .ml {
+  background: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 33;
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+}
+.Book .ml p {
+  font-size: .48rem;
+  font-family: PingFangSC-Regular;
+  width: 6.7rem;
+  height: 1.62rem;
+  padding-left: 0.34rem;
+  line-height: 1.62rem;
+  border-bottom: 0.02rem solid #F1F1F1;
+}
+.Book .wrapper {
+  overflow: hidden;
+  position: fixed;
+  top: 1.62rem;
+  left: 0;
+  width: 6.7rem;
+  z-index: 33;
+  height: 10.5rem;
+  font-size: .26rem;
+  background: #ffffff;
+}
+.Book .wrapper .content {
+  margin: 0 .34rem;
+}
+.Book .wrapper .content li {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  border-bottom: 0.02rem solid #F1F1F1;
+}
+.Book .wrapper .content li span:nth-child(2) {
+  float: right;
+}
+.Book .wrapper .content li span:nth-child(1) {
+  display: inline-block;
+  width: 3.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Book .wrapper .content li .yellow {
+  color: #FF9000;
+}
+.Book .wrapper .content li .green {
+  color: #3AC981;
+}
+.Book .wrapper .content li .red {
+  color: #F60549;
+}
+.Book footer {
+  display: none;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.Book footer .img {
+  margin-bottom: 1.97rem;
+  position: relative;
+}
+.Book footer .img img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.Book footer .img a:nth-child(1) {
+  margin-left: 0.2rem;
+}
+.Book footer .img a:nth-child(2) {
+  position: absolute;
+  right: 0;
+  margin-right: 0.2rem;
+}
+.Book footer .black {
+  height: 1.20rem;
+  background: #1f1f25;
+}
+.Book footer .black .left {
+  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+  display: inline-block;
+}
+.Book footer .black .left img {
+  display: block;
+  margin: 0 auto;
+  width: 0.44rem;
+  height: 0.34rem;
+  margin-bottom: 0.15rem;
+}
+.Book footer .black .left span {
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.Book footer .black .center {
+  display: inline-block;
+  margin-left: 2.38rem;
+}
+.Book footer .black .center img {
+  display: block;
+  margin: 0 auto;
+  width: 0.40rem;
+  height: 0.27rem;
+  margin-bottom: 0.14rem;
+}
+.Book footer .black .center span {
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.Book footer .black .right {
+  display: inline-block;
+  margin-left: 2.38rem;
+}
+.Book footer .black .right img {
+  display: block;
+  margin: 0 auto;
+  width: 0.44rem;
+  height: 0.34rem;
+  margin-bottom: 0.13rem;
+}
+.Book footer .black .right span {
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.Book footer .A {
+  display: none;
+  height: 1.60rem;
+  line-height: 2rem;
+  background: #1f1f25;
+}
+.Book footer .A img {
+  display: block;
+  margin: 0 auto;
+  width: 0.4rem;
+  height: 0.27rem;
+  margin-top: 0.2rem;
+}
+.Book footer .A .number {
+  display: inline-block;
+  width: 1.16rem;
+  height: .66rem;
+  vertical-align: text-bottom;
+  line-height: 0.5rem;
+  text-align: center;
+}
+.Book footer .A .number span {
+  display: inline-block;
+  font-size: .36rem;
+  font-family: PingFangSC-Medium;
+  color: #788296;
+}
+.Book footer .A .remove {
+  margin-left: 1rem;
+  display: inline-block;
+  width: 2.08rem;
+  height: .66rem;
+  line-height: 0.66rem;
+  border: 0.02rem solid rgba(241, 241, 241, 0.4);
+  border-radius: .06rem;
+}
+.Book footer .A .add {
+  display: inline-block;
+  width: 2.08rem;
+  height: .66rem;
+  line-height: 0.66rem;
+  border: 0.02rem solid rgba(241, 241, 241, 0.4);
+  border-radius: .06rem;
+}
+.Book .background {
+  width: 100%;
+  height: 1.60rem;
+  display: none;
+  background: #1f1f25;
+}
+.Book .background .active {
+  border: 0.02rem solid #F60549;
+}
+.Book .background .white {
+  margin-top: 0.3rem;
+  margin-left: 0.74rem;
+  display: inline-block;
+}
+.Book .background .white div {
+  margin-bottom: 0.2rem;
+  width: .56rem;
+  height: .56rem;
+  background: #ffffff;
+  border-radius: 0.08rem;
+}
+.Book .background .white p {
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.Book .background .green {
+  margin-left: 1.26rem;
+  display: inline-block;
+}
+.Book .background .green div {
+  margin-bottom: 0.2rem;
+  width: .56rem;
+  height: .56rem;
+  background-color: #DAF1C6;
+  border-radius: 0.08rem;
+}
+.Book .background .green p {
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.Book .background .yellow {
+  margin-left: 1.26rem;
+  display: inline-block;
+}
+.Book .background .yellow div {
+  margin-bottom: 0.2rem;
+  width: .56rem;
+  height: .56rem;
+  background: url("../img/组-42@2x.png") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  border-radius: 0.08rem;
+}
+.Book .background .yellow p {
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+.Book .background .black-1 {
+  margin-left: 1.26rem;
+  display: inline-block;
+}
+.Book .background .black-1 div {
+  margin-bottom: 0.2rem;
+  width: .56rem;
+  height: .56rem;
+  background-color: #191B21;
+  border-radius: 0.08rem;
+}
+.Book .background .black-1 p {
+  font-size: .26rem;
+  font-family: PingFangSC-Regular;
+  color: #788296;
+}
+/*购买*/
+.Buy .money {
+  margin-left: 0.34rem;
+  margin-top: 0.34rem;
+  font-size: .28rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+}
+.Buy .money span {
+  color: #f60549;
+}
+.Buy .money p:nth-child(1) {
+  margin-bottom: 0.3rem;
+}
+.Buy .pay span {
+  display: inline-block;
+  width: 3.30rem;
+  height: .90rem;
+  border: 0.02rem solid #D0D0D0;
+  border-radius: 0.08rem;
+  font-size: .32rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+  line-height: .9rem;
+  text-align: center;
+}
+.Buy .pay span:nth-child(1) {
+  margin-left: 0.34rem;
+  margin-right: 0.21rem;
+}
+.Buy .pay .active {
+  border: 0.02rem solid #F60549;
+}
+.Buy .sele .left {
+  margin-left: .365rem;
+  position: relative;
+  display: inline-block;
+  width: 2.86rem;
+  height: .66rem;
+  background: #f1f1f1;
+  border-radius: .06rem;
+  font-size: .3rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+  text-align: center;
+  line-height: .66rem;
+}
+.Buy .sele .left img {
+  position: absolute;
+  width: .17rem;
+  height: .08rem;
+  right: .3rem;
+  top: .3rem;
+}
+.Buy .sele span {
+  /*      margin-left: 0.37rem;
+            margin-right: 0.32rem;*/
+  width: .40rem;
+  height: .05rem;
+  background: #c0c0c0;
+  vertical-align: initial;
+  display: inline-block;
+}
+.Buy .sele .right {
+  position: relative;
+  display: inline-block;
+  width: 2.86rem;
+  height: .66rem;
+  background: #f1f1f1;
+  border-radius: .06rem;
+  font-size: .3rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+  text-align: center;
+  line-height: .66rem;
+}
+.Buy .sele .right img {
+  position: absolute;
+  width: .17rem;
+  height: .08rem;
+  right: .3rem;
+  top: .3rem;
+}
+.Buy .sele .wrapper {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 2.86rem;
+  height: 1.5rem;
+  font-size: .26rem;
+  background: #ffffff;
+}
+.Buy .sele .wrapper ul {
+  margin: 0 .34rem;
+}
+.Buy .sele .wrapper ul li {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  border-bottom: 0.02rem solid #F1F1F1;
+}
+.Buy .btn {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 6.00rem;
+  height: .80rem;
+  line-height: .8rem;
+  background: linear-gradient(to right, #f711ff, #ff1f5e);
+  border-radius: 0.4rem;
+  font-size: .30rem;
+  font-family: PingFangSC-Regular;
+  color: #ffffff;
+  margin-top: 1.66rem;
+}
+.Buy .buy-callback {
+  z-index: 88;
+  position: fixed;
+  top: 25%;
+  left: 15%;
+  display: none;
+  margin: 0 auto;
+  width: 5.40rem;
+  height: 5.22rem;
+  background: #ffffff;
+  border-radius: .06rem;
+}
+.Buy .buy-callback img {
+  width: .98rem;
+  height: .98rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+}
+.Buy .buy-callback p {
+  text-align: center;
+  font-size: .28rem;
+  font-family: PingFangSC-Regular;
+  color: #1f1f25;
+}
+.Buy .buy-callback .callback {
+  text-align: center;
+  font-size: .36rem;
+  font-family: PingFangSC-Regular;
+  color: #f90044;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+.Buy .buy-callback .book-info {
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+.Buy .buy-callback .back {
+  width: 4.72rem;
+  height: .80rem;
+  line-height: .8rem;
+  text-align: center;
+  background: linear-gradient(to right, #f711ff, #ff1f5e);
+  border-radius: .4rem;
+  font-size: .30rem;
+  font-family: PingFangSC-Regular;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.Buy #overlay {
+  background: #000;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: none;
+}
